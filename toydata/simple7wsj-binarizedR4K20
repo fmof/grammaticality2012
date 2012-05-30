@@ -1,0 +1,26 @@
+{ -binarize => true -corpus => toydata/simple7wsj -rulecriterion => 4 -cutoff => 20 }
+Loaded 7 trees from 'toydata/simple7wsj'
+
+
+### FINAL OUTPUT
+
+7 (ROOT S^g)
+4 (ROOT (S^g (@S^g NNP VP^g) .))
+4 (NNP _John_)
+4 (S^g (@S^g NNP VP^g) .)
+4 (@S^g NNP VP^g)
+4 (S^g @S^g .)
+4 (ROOT (S^g @S^g .))
+3 (S^g (@S^g (NNP John) VP^g) .)
+3 (NNP _Mary_)
+3 (VBZ _laughs_)
+3 (ROOT (S^g (@S^g (NNP John) VP^g) .))
+2 (ROOT (S^g (@S^g NNP VP^g) (. .)))
+2 (S^g NNP (VP^g VBZ PP^g))
+2 (S^g (@S^g NNP (VP^g VBZ NNP)) .)
+2 (ROOT (S^g (@S^g NNP (VP^g VBZ)) .))
+2 (S^g (@S^g NNP VP^g) (. .))
+2 (S^g (@S^g (NNP John) VP^g) (. .))
+2 (ROOT (S^g NNP (VP^g VBZ PP^g)))
+2 (ROOT (S^g (@S^g NNP (VP^g VBZ NNP)) .))
+2 (S^g (@S^g (NNP John) (VP^g VBZ NNP)) .)

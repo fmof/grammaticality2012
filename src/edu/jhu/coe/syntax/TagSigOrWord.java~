@@ -1,0 +1,26 @@
+package edu.jhu.coe.syntax;
+
+public class TagSigOrWord{
+    private short tag;
+    private short sig;
+    private String word;
+
+    public TagSigOrWord(){
+	init(-1,-1,null);
+    }
+
+    public TagSigOrWord(short t, short s){
+	init(t,s,null);
+    }
+    public TagSigOrWord(String s){
+	init(-1,-1,s);
+    }
+    private void init(short t,short s, String str){
+	tag=t; sig=s; word=str;
+    }
+
+    public boolean hasWord(){
+	return word!=null;
+    }
+
+}

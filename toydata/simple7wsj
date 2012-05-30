@@ -1,0 +1,31 @@
+
+( (S
+	(NNP John)
+	(VP (VBZ laughs) )
+	(. .) ))
+( (S
+	(NNP John)
+	(VP (VBZ loves) (NNP Mary))
+	(. .) ))
+( (S
+	(NNP John)
+	(VP (VBZ loves) (NNP Mary))
+	(. ?) ))
+( (S
+	(NNP Bill)
+	(VP (VBZ laughs))
+	(. !) ))
+( (S
+	(NNP John)
+	(VP (VBZ runs)
+	    (PP (IN in)
+	    	(NP (DT the) (NN park))))))
+( (S
+	(NNP Bill)
+	(VP (VBZ laughs)
+	    (PP (IN with)
+	    	(NNP Mary)
+		))))
+( (S
+	(UH Wow)
+	(. !) ))

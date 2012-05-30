@@ -1,0 +1,11 @@
+
+( (S
+	(NNP John)
+	(VP (VBZ laughs) )
+	(. .) ))
+( (S
+	(NNP John)
+	(VP (VBZ laughs) 
+	    (PP (IN in)
+	    	(NP (DT the) (NN park))))
+	 ))
