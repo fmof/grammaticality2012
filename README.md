@@ -12,6 +12,7 @@ This accompanies
 }
 
 This readme explains how to:
+
 1. extract count-based tree fragments (Algorithm 1), and
 2. replicate the experiments (Section 4).
 
@@ -31,7 +32,8 @@ compile:
     [javac] Compiling 6 source files to [dir]/classes
 
 BUILD SUCCESSFUL
-Total time: 1 second```
+Total time: 1 second
+```
 
 Running
 =======
@@ -103,7 +105,8 @@ To extract features from count_file:
 -extractcounts 0 #don't extract counts\
 -texttofragment <count_file> \
 -testcorpus <parsed_corpus> \
--outputtextfeatures <output_file>```
+-outputtextfeatures <output_file>
+```
 
 If you used the incremental print option, you'll need to run the original count file through 
 bin/splitOutputFiles.pl (see below). 
