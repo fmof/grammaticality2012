@@ -126,12 +126,12 @@ This *REQUIRES* the environment variable $GRAM_DATA_LOC to be set to where the d
 Other Useful Helper Scripts
 ===========================
 
-* bin/splitOutputFiles.pl <path/to/count_file> 
+* `bin/splitOutputFiles.pl <path/to/count_file> `
   - Split incremental output from bin/extract_fragment.sh
 
-* bin/rankFragments.pl <path/to/count_file> [N=5]
+* `bin/rankFragments.pl <path/to/count_file> [N=5]`
   - List the top N fragments for each symbol sorted by weight
   - Weight-space should be monotonically-isomorphic to probability space
 
-* bin/binarizeWSJ.sh
+* `bin/binarizeWSJ.sh`
   - Little built-in wrapper to binarize a treebank
