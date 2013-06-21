@@ -22,7 +22,8 @@ Requirements
 The two tasks have slightly different dependencies, but generally you need Java >= 1.6. 
 The code and experiments were run on a Linux set-up. Compile using ANT:
 
-```$ ant
+```
+$ ant
 Buildfile: [dir]/build.xml
      [echo] Using Java version 1.7.
 
@@ -47,7 +48,8 @@ Flags you'll be most interested in:
 -cutoff %d          [number of fragments to keep around]
 
 For example, to get the five most commonly used CFG rules in sections 2-21 of WSJ,
-```$ java -cp classes/ edu.jhu.laptsg.syntax.SubtreeAnalyzerByRule -rulecriterion 1 -cutoff 5 -corpus <WSJ path>
+```
+$ java -cp classes/ edu.jhu.laptsg.syntax.SubtreeAnalyzerByRule -rulecriterion 1 -cutoff 5 -corpus <WSJ path>
 [...]
 ### FINAL OUTPUT
 
@@ -63,7 +65,8 @@ If you want incremental updates, turn on:
 -incrementalprint 
 
 e.g.,
-```$ java -cp classes/ edu.jhu.laptsg.syntax.SubtreeAnalyzerByRule -rulecriterion 2 -cutoff 5 -incrementalprint -corpus <WSJ path>
+```
+$ java -cp classes/ edu.jhu.laptsg.syntax.SubtreeAnalyzerByRule -rulecriterion 2 -cutoff 5 -incrementalprint -corpus <WSJ path>
 [...]
 ### OUTPUT FROM AT MOST 1 RULE
 76617 (PP IN NP)
@@ -101,7 +104,8 @@ https://github.com/mjpost/post2011judging
 Please first set up the data according to the instructions there (most important steps are 4-8).
 
 To extract features from count_file:
-```java -cp classes edu.jhu.coe.syntax.SubtreeAnalyzerByRule \
+```
+java -cp classes edu.jhu.coe.syntax.SubtreeAnalyzerByRule \
 -extractcounts 0 #don't extract counts\
 -texttofragment <count_file> \
 -testcorpus <parsed_corpus> \
