@@ -254,6 +254,10 @@ public class SubtreeAnalyzerByRule extends SubtreeAnalyzer{
 	SABR = new SubtreeAnalyzerByRule(opts);
 
 	if(opts.extractcounts==1){
+	    if(opts.corpus == null){
+		System.err.println("Please provide an input corpus through \"-corpus <path>\"");
+		System.exit(-1);
+	    }
 	    if(opts.treebank != TreeBankType.WSJ)
 		SABR.setCorpus(opts.corpus, opts.treebank);
 	    else

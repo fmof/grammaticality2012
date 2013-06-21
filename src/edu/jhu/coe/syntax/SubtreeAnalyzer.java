@@ -500,8 +500,8 @@ public abstract class SubtreeAnalyzer implements Serializable{
     }
 
     public static class Options {
-	@Option(name = "-universalTagLocation", usage = "path to universal tag mappings")
-	    public String universalTagLocation = "/home/hltcoe/fferraro/code/universal_pos_tags.1.02/";
+	@Option(name = "-universalTagLocation", usage = "path to universal tag mappings (default null)")
+	    public String universalTagLocation = null;
 	@Option(name = "-universalTagLanguage", usage = "Which universal tag set to acces; default = null = don't use universal tags; all-to-X = replace *every* symbol by \"X\"")
 	    public String languageForUniversalTags=null;
 	@Option(name = "-trfr", usage = "The fraction of the training corpus to keep (Default: 1.0)\n")
@@ -517,7 +517,7 @@ public abstract class SubtreeAnalyzer implements Serializable{
 
 	@Option(name = "-extractcounts", required = false, usage = "Extract counts from the \"training\" corpus (default 1 (==true))")
 	    public int extractcounts = 1;
-        @Option(name = "-corpus", required = false, usage = "Location of training corpus hierarchy (default /export/common/data/corpora/LDC/LDC99T42/treebank_3/parsed/mrg/wsj/)")
+        @Option(name = "-corpus", required = false, usage = "Location of training corpus hierarchy (required when extract_counts=1, default=null)")
 	    public String corpus = "/export/common/data/corpora/LDC/LDC99T42/treebank_3/parsed/mrg/wsj/";
         @Option(name = "-first", required = false, usage = "First section of training data (default 0200)")
 	    public int first = 200;

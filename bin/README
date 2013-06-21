@@ -1,6 +1,0 @@
-perl intersectTopM.pl <ptb_sorted_count_file> <tsg_sorted_count_file> [<m : intersect top m from each>]
-     Calculates COUNT[1:m] \cap TSG[1:m]
-
-perl intersectUntilM.pl <ptb_sorted_count_file> <tsg_sorted_count_file> [<m>]
-     Returns X = COUNT[1:k_1] \cap TSG[1:k_2] such that
-     	     |X| = m

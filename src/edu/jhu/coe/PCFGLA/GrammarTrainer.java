@@ -142,8 +142,8 @@ public class GrammarTrainer {
 
 	@Option(name = "-skipSection", usage = "Skips a particular section of the training corpus (Needed for training Mark Johnsons reranker")
 	    public int skipSection = -1;
-	@Option(name = "-universalTagLocation", usage = "path to universal tag mappings")
-	    public String universalTagLocation = "/home/hltcoe/fferraro/code/universal_pos_tags.1.02/";
+	@Option(name = "-universalTagLocation", usage = "path to universal tag mappings (default: null)")
+	    public String universalTagLocation = null;
 	@Option(name = "-universalTagLanguage", usage = "Whether to use universal tag set; default = null = don't use universal tags")
 	    public String languageForUniversalTags=null;
 	@Option(name = "-useConstraintSet", usage="Whether or not to use a constraint set (if false, then allow all couplings) (default: true)")
