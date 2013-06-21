@@ -2,6 +2,7 @@ Frank Ferraro
 
 This accompanies 
 
+```
 @InProceedings{ferraro-grammaticality-2012,
     author = {Ferraro, Francis and Post, Matt and {Van Durme}, Benjamin},
     title = {Judging Grammaticality with Count-Induced Tree Substitution Grammars},
@@ -10,6 +11,7 @@ This accompanies
     url = {http://cs.jhu.edu/~ferraro/papers/ferraro-grammaticality-2012.pdf},
     poster = {http://cs.jhu.edu/~ferraro/papers/ferraro-grammaticality-2012_poster.pdf}
 }
+```
 
 This readme explains how to:
 
@@ -135,3 +137,9 @@ Other Useful Helper Scripts
 
 * `bin/binarizeWSJ.sh`
   - Little built-in wrapper to binarize a treebank
+
+
+OTHER INFO:
+This code relies heavily on a previous version of the Berkeley parser 
+(https://code.google.com/p/berkeleyparser/).
+This is licensed under GPL v2.
