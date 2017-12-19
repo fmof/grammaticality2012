@@ -51,7 +51,7 @@ Flags you'll be most interested in:
 
 For example, to get the five most commonly used CFG rules in sections 2-21 of WSJ,
 ```
-$ java -cp classes/ edu.jhu.laptsg.syntax.SubtreeAnalyzerByRule -rulecriterion 1 -cutoff 5 -corpus <WSJ path>
+$ java -cp classes/ edu.jhu.coe.syntax.SubtreeAnalyzerByRule -rulecriterion 1 -cutoff 5 -corpus <WSJ path>
 [...]
 ### FINAL OUTPUT
 
@@ -68,7 +68,7 @@ If you want incremental updates, turn on:
 
 e.g.,
 ```
-$ java -cp classes/ edu.jhu.laptsg.syntax.SubtreeAnalyzerByRule -rulecriterion 2 -cutoff 5 -incrementalprint -corpus <WSJ path>
+$ java -cp classes/ edu.jhu.coe.syntax.SubtreeAnalyzerByRule -rulecriterion 2 -cutoff 5 -incrementalprint -corpus <WSJ path>
 [...]
 ### OUTPUT FROM AT MOST 1 RULE
 76617 (PP IN NP)
@@ -89,7 +89,7 @@ Expanding at most 2 rules
 ```
 
 Many more options are available via the -h flag
-$ java -cp classes edu.jhu.laptsg.syntax.SubtreeAnalyzerByRule -h
+$ java -cp classes edu.jhu.coe.syntax.SubtreeAnalyzerByRule -h
 
 
 There's also a wrapper script available:
